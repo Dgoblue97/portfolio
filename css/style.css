@@ -4,22 +4,57 @@ html{
 
 
 body{
-  background-color: #ddd;
+  background-color: #222629;
   font-size: 18px;
-  margin: 0;
-  padding: 0;
+  /* padding: 0; */
+
 }
 
 h1{
+  font-family: sans-serif;
   font-size: 50px;
   line-height: 1;
-  padding: 50px 0;
+  padding: 25px 0px;
   text-align: center;
+  /* color: #61892f */
+  color: white;
+  font-weight: bold;
 }
 
 h2{
+  font-family: sans-serif;
   font-size: 32px;
-  line-height: 1.5;
+  line-height: 1;
+  padding: 25px;
+  text-align: center;
+  /* color: #86C232; */
+  color: white;
+  font-weight: bold;
+}
+
+h3{
+  font-family: sans-serif;
+  font-size: 22px;
+  line-height: 1;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+
+}
+
+
+img{
+  max-height:500px;
+
+  width: 90vw;
+
+}
+
+p{
+  color: #6B6E70;
+  /* padding: 10px;
+  border: 10px solid black; */
 }
 
 nav ul{
@@ -29,28 +64,29 @@ nav ul{
 nav li{
   display: inline;
   padding-right: 20px;
-  /*Your code here */
-
 }
 
-
-
-nav a{
+/* nav a{
   color: black;
   font-weight: bold;
-  text-decoration: none; /* Code Here*/
+  text-decoration: none;
   align-self: center;
-}
+} */
 
 nav a:hover{
-  text-decoration: underline; /*Your code here - add the underline*/;
+  text-decoration: underline;
+}
+
+.active {
+  background-color: #61892f;
+  color: white;
 }
 
 .skip a{
   background: white;
   left: 0;
   padding: 6px;
-  top:   -40px;   /*Your code here - place 40px higher */
+  top:   -40px;
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
   z-index: 1;
@@ -60,251 +96,210 @@ nav a:hover{
 
 .skip a:focus{
   top: 0px;
-/*Add the selector and rule to move the skip link to the exact top.*/
 }
 
 
 *:focus{
-  border: 2px solid black;
+  border: 2px solid red;
 }
+
+header p{
+  color: white;
+  font-size: 24px;
+  padding:10px 10px;
+  text-align: center;
+}
+
+/* .nav{
+
+  background-color: #ddd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  align-self: center;
+  font-family: cursive;
+} */
+
+
+
+
+
+.dropbtn {
+  background-color: #86C232;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.nav {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-family: cursive;
+}
+
+.nav a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.nav a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .nav {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #61892f;}
 
 
 footer{
   background-color: black;
   color: white;
-  grid-column: 1 / -1;  /*Can you explain what this does?*/
-  grid-row: 7 / span 1;   /*Can you rewrite it?*/
-  padding-top: 30px;
+  padding-top: 10px;
+  padding-bottom:10px;
   text-align: center;
 }
-
-
 .container{
+
 
   /*Your code here  */
   display: grid;
-  grid-template-columns: 100px 500px 100px;
-  grid-row-gap: 15px;
-  /*Provided*/
-  grid-template-rows: 30px auto auto auto auto auto  100px;
+  grid-template-columns: 1fr;
+  grid-row-gap: 10px;
   width: 100vw;
+  align-content: center;
 }
 
-.nav{
-   /*Your code here */
-   grid-column: 1 / -1;
-   grid-row: 1 / span 1;
-  /*Provided*/
-  background-color: #ddd;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: left;
-  align-self: center;
+.container div{
+  padding: 10px;
+  border: 10px solid #61892f;
+  /* border: 10px solid #474B4F; */
 }
 
-header{
-  background-attachment: fixed; /* Parallax effect */
-  background-image: url("../images/header.jpg");  /* Your code here - Link to header.jpg in the images folder */
-  background-position: center;  /* Parallax effect */
-  background-repeat: no-repeat; /* Parallax effect */
-  background-size: cover;       /* Parallax effect */
-  color: white;
-  height: 400px;                /* Parallax effect */
-  grid-column: 1 / -1;
-  grid-row: 2 / span 1;
- }
-header p{
-  color: white;
-  font-size: 24px;
-  padding: 0 100px;
-  text-align: center;
+
+i{
+  color: #61892f;
 }
 
-.about-image{
-  /*Your code here */
-
-  /* background-image: url("../images/about.jpg"); */
-  grid-column: 1 / 4;
-  grid-row: 3 / span 1;
-  max-height: 700px;
+.nw_ordinance{
+  /* max-height: 700px; */
   overflow: hidden;
-/* align-self: center;
-justify-content: center; */
+  align-content: center;
 }
 
-.about{
-  /*Your code here */
+
+
+/* .northwest_text{
   grid-column: 2 / span 1;
   grid-row: 3 / span 1;
-  /* align-self: center;
-  justify-content: center;  */
+  align-self: center;
+  justify-content: center;
+} */
+
+
+.firstgame img{
+
 
 }
 
-.method-image{
-  /*Your code here */
-  grid-column: 1 / 4;
-  grid-row: 4 / span 1;
+.firstgame{
+  /* grid-column: 1 / span 2; */
+  /* grid-row: 2 / span 1; */
   max-height: 700px;
   overflow: hidden;
-
-}
-
-.method{
-    /*Your code here - start in the 2nd column*/
-
-    grid-column: 2 / span 1;
-    grid-row: 4 / span 1;
-}
-
-.clients-image{
- /*Your code here */
- grid-column: 1 / 4;
- grid-row: 5 / span 1;
- max-height: 700px;
- overflow: hidden;
-}
-
-.clients{
- /*Your code here */
- grid-column: 2 / span 1;
- grid-row: 5 / span 1;
-}
-
-.contact-image{
-   /*Your code here */
-   grid-column: 1 / 4;
-   grid-row: 6 / span 1;
-   max-height: 700px;
-   overflow: hidden;
-
-}
-
-.contact{
-   /*Your code here */
-   grid-column: 2 / span 1;
-   grid-row: 6 / span 1;
-}
-
-.text-block{
-
-   /*Your code here */
-
-  background-color: rgba(255, 255, 255, .8);
-  border: 10px solid black;
-  padding: 30px;
-  align-self: center;
-  justify-self: center;
-  /* Check and see if this is right  */
+  color:black;
+  align-content: center;
 }
 
 
+.walter_camp{
 
-@media screen and (min-width: 800px) {
-
-  .container{
-    /*Your code here */
-    display: grid;
-    grid-template-rows: 70px 400px 400px 400px 400px 400px 100px;
-
-    grid-template-columns: 50px auto 500px auto 50px;
-  }
+  overflow: scroll;
+  max-height: 600px;
+}
 
 
-  .nav{
-     background-color: #ddd;
+.john_heismen{
+  overflow: scroll;
+  max-height: 600px;
 
-     /*Your code here */
-     grid-column: 1 / -1;
-     grid-row: 1 / span 1;
-     text-align: right;
-     align-self: center;
-     padding-top: 35px;
-     padding-bottom: 35px;
-  }
+}
 
-  .about-image{
-     /*Your code here */
-     /* background-image:url("../images/about.jpg"); */
-     grid-column: 2 / span 2;
-     grid-row: 3 span 1;
-     max-height: 700px;
-     overflow: hidden;
-    }
+.aa_stagg{
+  overflow: scroll;
+  max-height: 600px;
+}
 
-  .about{
-    /*Your code here */
-    grid-column: 3 / span 2;
-    grid-row: 3 span 1;
-  }
+.fielding_yost{
+  overflow: scroll;
+  max-height: 600px;
+}
 
-  .method-image{
-    /*Your code here */
-    grid-column: 3 / span 2;
-    grid-row: 4 / span 1;
-    max-height: 700px;
-    overflow: hidden;
-  }
+.pop_warner{
+  overflow: scroll;
+  max-height: 600px;
+}
 
-  .method{
-    /*Your code here */
-    grid-column: 2 / span 2;
-    grid-row: 4 / span 1;
+.james_angell{
+  overflow: scroll;
+  max-height: 600px;
+}
 
-  }
+.yost_era{
+  overflow: scroll;
+  max-height: 600px;
+}
 
-  .clients-image{
-    /*Your code here */
-    grid-column: 2 / span 2;
-    grid-row: 5 / span 1;
-    max-height: 700px;
-    overflow: hidden;
+.fritz_crisler{
+  overflow: scroll;
+  max-height: 600px;
+}
 
-  }
+.bo_schembechler{
+  overflow: scroll;
+  max-height: 600px;
+}
 
-  .clients{
-    /*Your code here */
-    grid-column: 3 / span 2;
-    grid-row: 5 / span 1;
-  }
+.rose_bowl{
+  overflow: scroll;
+  max-height: 600px;
+}
 
-  .contact-image{
-    /*Your code here */
-    grid-column: 3 / span 2;
-    grid-row: 6 / span 1;
-    max-height: 700px;
-    overflow: hidden;
+.jim_harbaugh{
+  overflow: scroll;
+  max-height: 600px;
+}
 
-  }
+.knute_rockne{
+  overflow: scroll;
+  max-height: 600px;
+}
 
-  .contact{
-    /*Your code here */
-    grid-column: 2 / span 2;
-    grid-row: 6 / span 1;
-   }
+.race{
+  overflow: scroll;
+  max-height: 600px;
+}
 
-}  /*End the media query*/
+.pony_express{
+  overflow: scroll;
+  max-height: 600px;
+}
 
-@media screen and (prefers-reduced-motion: reduce){
-  html{
-      scroll-behavior: auto; /* Removes scroll animation */
-  }
-
-  .skip a{
-    background: white;
-    left: 0;
-    padding: 6px;
-    position: absolute;
-    top: -40px;
-    /* -webkit-transition: default; /* Your code here - set to default setting */ */
-    /* transition: default; /* Your code here - set to default setting */ */
-    /* z-index: 1; */
-    -webkit-transition: none;
-    transition: none;
-    z-index: 1;
-  }
-
-  .skip a:focus{
-    top:0;
-  }
+.current_day{
+  overflow: scroll;
+  max-height: 600px;
 }
