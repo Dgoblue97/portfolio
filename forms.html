@@ -14,10 +14,48 @@
 	<title>Forms</title>
 	<link rel="stylesheet" type="text/css" href="css/formStyle.css">
 </head>
+
+<div class= "dropdown">
+<button class="dropbtn">Menu</button>
+  <div class="nav">
+    <nav>
+      <ul>
+        <li><a href="index.html" class = "active">Home</a></li>
+        <li><a href="ff.html">Founding Fathers</a></li>
+        <li><a href="um.html">Michigan</a></li>
+        <li><a href="modern.html">Modern Game</a></li>
+        <li><a href="forms.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
 <body>
 
 
-<form action="https://formspree.io/danlouis@umich.edu" method = "post">
+  <!-- <form class="https://formspree.io/danlouis@umich.edu" action="" method="post"> -->
+
+
+  <header>Contact</header>
+
+<form id="form" class="https://formspree.io/danlouis@umich.edu" action="" method ="post">
+
+    <input id="name" type="text" placeholder="NAME">
+    <input id="email" type="text" placeholder="E-MAIL">
+    <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+<input id="submit" type="submit" value="GO!">
+
+</form>
+
+
+
+
+
+
+
+
+
+<!-- <form action="https://formspree.io/danlouis@umich.edu" method = "post">
 	<fieldset>
 		<legend>Personal Information:</legend>
 		<label for="name">Name</label>
@@ -29,6 +67,6 @@
 		<input type="date" id = "birth"><br>
 		<input type = "submit" value = "Save!">
 	</fieldset>
-</form>
+</form> -->
 </body>
 </html>
