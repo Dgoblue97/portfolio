@@ -6,7 +6,6 @@ html{
 body{
   background-color: #222629;
   font-size: 18px;
-  /* padding: 0; */
 
 }
 
@@ -22,7 +21,7 @@ h1{
 }
 
 h2{
-  font-family: sans-serif;
+  font-family: 'Cutive Mono', monospace;
   font-size: 32px;
   line-height: 1;
   padding: 15px;
@@ -33,7 +32,7 @@ h2{
 }
 
 h3{
-  font-family: sans-serif;
+  font-family: 'Cutive Mono', monospace;
   font-size: 22px;
   line-height: 1;
   padding: 10px;
@@ -69,16 +68,22 @@ h3{
 
 img{
   max-height:600px;
-  width: 100%;
+  width: 95%;
   margin: 0 auto;
   display: block;
-
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  padding-top: 10px;
 }
+
+
 
 p{
   color: #6B6E70;
-  /* padding: 10px;
-  border: 10px solid black; */
+}
+
+div p{
+  margin: 20px;
 }
 
 nav ul{
@@ -90,12 +95,6 @@ nav li{
   padding-right: 20px;
 }
 
-/* nav a{
-  color: black;
-  font-weight: bold;
-  text-decoration: none;
-  align-self: center;
-} */
 
 nav a:hover{
   text-decoration: underline;
@@ -198,58 +197,19 @@ footer{
   position: relative;
 }
 
-
-.index_container{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3,1fr)
-
-
-}
-
-
 .container{
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 10px;
+  grid-column-gap: 10px;
   width: 100vw;
   align-content: center;
 }
 
 .container div{
   border: 7px solid #61892f;
+
 }
-
-
-
-
-
-.nw_ord_pic{
-  grid-row: 1 / span 1;
-  grid-column: 1 / span 1;
-}
-.nw_ordinance{
-  /* max-height: 700px; */
-  overflow: hidden;
-  align-content: center;
-  grid-row: 1 / span 1;
-  grid-column: 1 / span 1;
-}
-
-.nw_ord_pic img {
-  -webkit-filter: blur(3px);
-  filter: blur(3px);
-}
-
-.firstgame{
-  /* grid-column: 1 / span 2; */
-  /* grid-row: 2 / span 1; */
-  max-height: 700px;
-  overflow: hidden;
-  color:black;
-  align-content: center;
-}
-
 
 .walter_camp{
 
@@ -332,9 +292,17 @@ footer{
 
 @media screen and (min-width: 600px) {
   .container{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
+
+  .container div{
+    /* border: 7px solid #61892f; */
+    width: 45%;
+    margin-top: 2%;
+  }
+
   /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
@@ -342,7 +310,9 @@ footer{
   height: 200px;
   border: 1px solid #f1f1f1;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  /* justify-content: center; */
 }
+
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
@@ -380,12 +350,16 @@ footer{
   transform: rotateY(180deg);
 }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .container{
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+  /* padding: 2%; */
   /* grid-template-columns: 1fr 1fr 1fr; */
   }
+
+
   /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
@@ -429,6 +403,13 @@ footer{
   background-color: dodgerblue;
   color: white;
   transform: rotateY(180deg);
+}
+
+
+
+.container div{
+  /* border: 7px solid #61892f; */
+  width: 28%;
 }
 }
 
