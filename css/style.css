@@ -2,12 +2,9 @@ html{
     scroll-behavior: smooth;
 }
 
-
 body{
   background-color: #222629;
-  /* background-color: black; */
   font-size: 18px;
-
 }
 
 h1{
@@ -79,7 +76,6 @@ img{
 }
 
 p{
-  /* color: #6B6E70; */
   color: white;
 }
 
@@ -159,7 +155,7 @@ header p{
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  font-family: cursive;
+  font-family: 'Cutive Mono', monospace;
 }
 
 .nav a {
@@ -193,7 +189,6 @@ footer{
 footer p{
   color: white
 }
-
 
 .container{
   display: grid;
@@ -421,46 +416,11 @@ border: 5px solid #86C232;
    50% { border-color: #86C232; }
  }
 
-
-
 .container div{
   /* border: 7px solid #61892f; */
   width: 28%;
 }
-
-/* .pony_express:hover {
-  background-color: 'pink';
-  background-image: url("../images/money_bag.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: multiply;
-} */
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 media screen and (prefers-reduced-motion: reduce){
   html{
@@ -473,9 +433,9 @@ media screen and (prefers-reduced-motion: reduce){
     padding: 6px;
     position: absolute;
     top: -40px;
-    /* -webkit-transition: default; /* Your code here - set to default setting */ */
-    /* transition: default; /* Your code here - set to default setting */ */
-    /* z-index: 1; */
+    -webkit-transition: default;
+    transition: default;
+    z-index: 1;
     -webkit-transition: none;
     transition: none;
     z-index: 1;
