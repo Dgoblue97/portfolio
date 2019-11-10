@@ -76,14 +76,15 @@ input:hover::placeholder, textarea:hover::placeholder {
   font-size: 0.875em;
 }
 
-input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+input:hover:focus::-ms-placeholder, textarea:hover:focus:-ms-placeholder {
   color: #cbc6c1;
 }
 
 body {
   font-family: 'Lato', sans-serif;
   background: #222629;
-  color: #b3aca7;
+  /* color: #b3aca7; */
+  color: white;
 }
 
 header {
