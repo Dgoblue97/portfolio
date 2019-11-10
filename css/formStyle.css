@@ -177,7 +177,8 @@ textarea:hover {
 
 .dropbtn {
   background-color: #86C232;
-  color: white;
+  color: black;
+  font-weight: bold;
   padding: 16px;
   font-size: 16px;
   border: none;

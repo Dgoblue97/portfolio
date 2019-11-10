@@ -135,32 +135,11 @@ header p{
   font-family: 'Cutive Mono', monospace;
 }
 
-/* .titles { */
-  /* overflow: hidden; /* Ensures the content is not revealed until the animation */ 
-  /* border-right: .15em solid #86C232; /* The typwriter cursor */
-  /* white-space: nowrap; /* Keeps the content on a single line */
-  /* margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  /* letter-spacing: .15em; /* Adjust as needed */
-  /* animation:
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end 2;
-} */
-
-/* The typing effect */
-/* @keyframes typing {
-  from { width: 0 }
-  to { width: 100%}
-} */
-
-/* The typewriter cursor effect */
-/* @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #86C232; }
-} */
 
 .dropbtn {
   background-color: #86C232;
-  color: white;
+  color: black;
+  font-weight: bold;
   padding: 16px;
   font-size: 16px;
   border: none;
@@ -230,6 +209,9 @@ footer p{
 
 }
 .course_topics{
+  text-align: center;
+  font-family: 'Cutive Mono', monospace;
+  color: white;
 
 }
 
@@ -238,8 +220,6 @@ footer p{
   overflow: scroll;
   max-height: 600px;
 }
-
-
 .john_heismen{
   overflow: scroll;
   max-height: 600px;
@@ -311,6 +291,13 @@ footer p{
   max-height: 600px;
 }
 
+.flip-card-front {
+border: 5px solid #86C232;
+}
+
+.flip-card-back p{
+  text-align: center;
+}
 
 @media screen and (min-width: 600px) {
   .container{
@@ -319,20 +306,41 @@ footer p{
     justify-content: space-around;
   }
 
+
+
   .container div{
     /* border: 7px solid #61892f; */
     width: 45%;
     margin-top: 2%;
   }
 
+  .marchingband{
+    background-image: url('../images/go_blue_banner.jpg');
+    /* background-color: #fff;
+    background-blend-mode: luminosity; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 300px;
+    width: 100vw;
+  }
+
+.flip-container{
+  padding:25px
+}
+
+
   /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 200px;
-  border: 1px solid #f1f1f1;
+  width: 400px;
+  height: 400px;
+  /* border: 1px solid #f1f1f1; */
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   /* justify-content: center; */
+  margin: 0 auto;
+
 }
 
 
@@ -361,7 +369,7 @@ footer p{
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #bbb;
+  background-color: #86C232;
   color: black;
 }
 
@@ -381,51 +389,27 @@ footer p{
   /* grid-template-columns: 1fr 1fr 1fr; */
   }
 
+  .first_titles{
+    overflow: hidden;
+    border-right: .15em solid #86C232;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end 2;
+  }
 
-  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-card {
-  background-color: transparent;
-  width: 400px;
-  height: 400px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-}
+  @keyframes typing {
+   from { width: 0 }
+   to { width: 100%}
+ }
 
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-}
-
-/* Style the back side */
-.flip-card-back {
-  background-color: #222629;
-  color: white;
-  transform: rotateY(180deg);
-}
+ /* The typewriter cursor effect */
+ @keyframes blink-caret {
+   from, to { border-color: transparent }
+   50% { border-color: #86C232; }
+ }
 
 
 
