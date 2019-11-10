@@ -23,7 +23,7 @@ h1{
 
 h2{
   font-family: 'Cutive Mono', monospace;
-  font-size: 32px;
+  font-size: 25px;
   line-height: 1;
   padding: 15px;
   text-align: center;
@@ -222,28 +222,32 @@ color: white;
 }
 
 .walter_camp{
-
   overflow: scroll;
+  overflow-y: auto;
   max-height: 600px;
 }
 .john_heismen{
   overflow: scroll;
+  overflow-y: auto;
   max-height: 600px;
 
 }
 
 .aa_stagg{
   overflow: scroll;
+  overflow-y: auto;
   max-height: 600px;
 }
 
 .fielding_yost{
   overflow: scroll;
+  overflow-y: auto;
   max-height: 600px;
 }
 
 .pop_warner{
   overflow: scroll;
+  overflow-y: auto;
   max-height: 600px;
 }
 
