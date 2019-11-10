@@ -14,8 +14,10 @@
 	<title>Forms</title>
   <link rel="stylesheet" type="text/css" href="css/html5reset.css">
 	<link rel="stylesheet" type="text/css" href="css/formStyle.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
+<body>
+<div class="skip"><a href="#form">Skip to Main Content</a></div>
 <div class= "dropdown">
 <button class="dropbtn">Menu</button>
   <div class="nav">
@@ -30,43 +32,24 @@
     </nav>
   </div>
 </div>
-
-<body>
-
-
-  <header>Contact</header>
+<header>Contact</header>
 
 <form id="form"  action="https://formspree.io/moqqvybk" method ="POST">
-
-    <input id="name" type="text" placeholder="NAME" name = 'name'>
-    <input id="email" type="text" placeholder="E-MAIL" name="_replyto">
-    <textarea id="message" type="text" placeholder="MESSAGE" name='message'></textarea>
+    <label for="name">Name</label>
+    <input id="name" type="text" placeholder="John Doe" name = 'name'>
+    <label for="email">Email</label>
+    <input id="email" type="text" placeholder="john.doe@gmail.com" name="_replyto">
+    <label for="message">Message</label>
+    <textarea id="message" placeholder="I loved the site" name='message'></textarea>
 <input id="submit" type="submit" value="Send">
 </form>
 
 
 
-
-
-
-
-
-
-<!-- <form action="https://formspree.io/danlouis@umich.edu" method = "post">
-	<fieldset>
-		<legend>Personal Information:</legend>
-		<label for="name">Name</label>
-		<input type="text" id = "name" placeholder="Colleen van Lent"><br/>
-		<label> Email:
-			<input type="email" value = "email@umich.edu">
-		</label><br/>
-		<label for="birth">Date of birth:</label>
-		<input type="date" id = "birth"><br>
-		<input type = "submit" value = "Save!">
-	</fieldset>
-</form> -->
-</body>
 <footer>
   <p>This page was produced by Daniel Eilender<br> Please contact me @ danlouis@umich.edu</p>
 </footer>
+
+</body>
+
 </html>

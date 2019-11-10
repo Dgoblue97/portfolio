@@ -208,6 +208,12 @@ footer p{
   border: 7px solid #61892f;
 
 }
+
+.course_description{text-align: center;
+font-family: 'Cutive Mono', monospace;
+color: white;
+
+}
 .course_topics{
   text-align: center;
   font-family: 'Cutive Mono', monospace;
