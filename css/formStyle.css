@@ -313,4 +313,7 @@ media screen and (prefers-reduced-motion: reduce){
   .skip a:focus{
     top:0;
   }
+  *:focus{
+    border: 2px solid red;
+  }
 }
