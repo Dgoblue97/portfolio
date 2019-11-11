@@ -278,7 +278,9 @@ nav a:hover{
 .titles {
   text-align: center;
 }
-
+*:focus{
+  border: 2px solid red;
+}
 footer{
   background-color: black;
   color: white;
@@ -331,7 +333,5 @@ media screen and (prefers-reduced-motion: reduce){
   .skip a:focus{
     top:0;
   }
-  *:focus{
-    border: 2px solid red;
-  }
+
 }
