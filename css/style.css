@@ -303,6 +303,17 @@ border: 5px solid #86C232;
 .flip-card-back p{
   text-align: center;
 }
+.marchingband{
+  background-image: url('../images/go_blue_banner.jpg');
+  /* background-color: #fff;
+  background-blend-mode: luminosity; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 300px;
+  width: 100vw;
+}
 
 @media screen and (min-width: 600px) {
   .container{
@@ -319,17 +330,7 @@ border: 5px solid #86C232;
     margin-top: 2%;
   }
 
-  .marchingband{
-    background-image: url('../images/go_blue_banner.jpg');
-    /* background-color: #fff;
-    background-blend-mode: luminosity; */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 300px;
-    width: 100vw;
-  }
+
 
 .flip-container{
   padding:25px
