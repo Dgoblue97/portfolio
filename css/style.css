@@ -392,8 +392,6 @@ border: 5px solid #86C232;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  /* padding: 2%; */
-  /* grid-template-columns: 1fr 1fr 1fr; */
   }
 
   .first_titles{
@@ -446,4 +444,5 @@ media screen and (prefers-reduced-motion: reduce){
   .skip a:focus{
     top:0;
   }
+
 }
