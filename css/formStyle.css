@@ -288,7 +288,7 @@ footer{
   bottom: 0;
   left:0;
   width: 100vw;
-  position: absolute;
+  position: relative;
 }
 
 media screen and (prefers-reduced-motion: reduce){
